@@ -1,13 +1,15 @@
-let length;
-let width;
+let groceryone;
+let grocerytwo;
+let grocerythree;
 
 function calculateArea() {
-    length = parseFloat(document.getElementById('length').value);
-    width = parseFloat(document.getElementById('width').value);
+    groceryone = parseFloat(document.getElementById('grocery-1').value);
+    grocerytwo = parseFloat(document.getElementById('grocery-2').value);
+    grocerythree = parseFloat(document.getElementById('grocery-3').value);
    
-   let area = length * width;
-   console.log(area)
-   document.getElementById('result').innerText = `The area of the rectangle is: ${area}`;
+   let sum = groceryone + grocerytwo + grocerythree;
+   console.log(sum)
+   document.getElementById('result').innerText = `The area of the rectangle is: ${sum}`;
    }
 
  
