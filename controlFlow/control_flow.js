@@ -44,3 +44,20 @@ console.log(userCategory)
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated " : "Not Authenticated ";
 console.log(authenticationStatus);
+
+
+let employee = true;
+let diatryServices;
+
+if(employee) {
+   diatryServices = "Access to Diatry Services";
+} else if (enrolledMemeber) {
+    diatryServices = "Access to dietry services and one-on-one interaction ";
+} else if (subscriber){
+    diatryServices = "Partial access to diaerty services";
+
+} else {
+    diatryServices = "Please enroll first";
+}
+
+console.log(diatryServices)
