@@ -7,16 +7,17 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const userExperience = document.getElementById('userExperience').value;
     
-    // Additional validation if needed
-    if (!username || !age || !email || !job || !designation || !productType || !feedback) {
+    // Validate required inputs
+    if (!username || !age || !email || !job || !designation || !productType || !feedback || !userExperience) {
       alert('All fields are required!');
       return;
     }
     
     // Display alert
     alert('Thank you for your valuable feedback!');
-    
+  
     // Update the user information section
     document.getElementById('userName').innerText = username;
     document.getElementById('userAge').innerText = age;
@@ -25,7 +26,8 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerText = designation;
     document.getElementById('userProductChoice').innerText = productType;
     document.getElementById('userFeedback').innerText = feedback;
-    
+    document.getElementById('userExperienceDisplay').innerText = userExperience;
+  
     // Show the user information section
     document.getElementById('userInfo').style.display = 'block';
   }
@@ -40,4 +42,5 @@ function submitFeedback() {
       submitFeedback();
     }
   });
+  
   

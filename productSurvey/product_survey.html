@@ -10,8 +10,8 @@
   <label for="name">Name:</label><br>
   <input type="text" id="name" placeholder="Your Name" required><br>
   
-  <label for="age">Age:</label>
-  <input type="number" id="age" placeholder="Your Age" required min="0" max="120" step="1">  
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" placeholder="Your Age" required min="0" max="120" step="1"><br>
   
   <label for="email">Email:</label><br>
   <input type="email" id="email" placeholder="Your Email" required><br>
@@ -31,6 +31,9 @@
   
   <label for="feedbackText">Feedback:</label><br>
   <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br>
+
+  <label for="userExperience">User Experience:</label><br>
+  <textarea id="userExperience" rows="5" cols="30" placeholder="Share your experience" required></textarea><br>
   
   <button id="submitBtn">Submit Feedback</button>
   
@@ -44,8 +47,10 @@
     <p>Job: <span id="userJob"></span></p>
     <p>Designation: <span id="userDesignation"></span></p>
     <p>Feedback for <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+    <p>User Experience: <span id="userExperienceDisplay"></span></p>
   </div>
   
   <script src="./product_survey.js"></script>
 </body>
 </html>
+
