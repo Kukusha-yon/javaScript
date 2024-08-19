@@ -1,5 +1,6 @@
 let testText = "The quick brown fox jumps over the lazy dog.";
 let startTime, endTime;
+
 function startTest() {
     // Set the test text
     document.getElementById("inputText").value = testText;
@@ -13,6 +14,7 @@ function startTest() {
     button.innerHTML = "End Test";
     button.onclick = endTest;
 }
+
 function endTest() {
     endTime = new Date().getTime();
 
@@ -34,12 +36,16 @@ function endTest() {
         wpm = Math.round((typedWords / timeElapsed) * 60);
     }
 
+    // Calculate total length of the text entered
+    var totalLength = userTypedText.length; // Length of the entire text
+
     // Display the results
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Typing Test Results:</h2>" +
         "<p>Words Typed: " + typedWords + "</p>" +
         "<p>Time Elapsed: " + timeElapsed.toFixed(2) + " seconds</p>" +
-        "<p>Words Per Minute (WPM): " + wpm + "</p>";
+        "<p>Words Per Minute (WPM): " + wpm + "</p>" +
+        "<p>Total Length of Typed Text: " + totalLength + " characters</p>"; // Show total length
 
     // Reset the button
     var button = document.getElementById("btn");
